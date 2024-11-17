@@ -1,0 +1,133 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Raleway", sans-serif;
+    color: #fff;
+}
+
+body,
+html {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #1c1c1c;
+}
+
+.App {
+    text-align: center;
+    padding-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.App h1 {
+    margin-bottom: 2rem;
+}
+
+#welcome {
+    text-align: center;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Alinha os elementos no centro */
+}
+
+#welcome h2,
+#welcome p {
+    margin-bottom: 1rem;
+}
+
+#welcome p {
+    color: #8435de;
+}
+
+#welcome img {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    max-width: 100%;
+    object-fit: cover;
+    height: 300px;
+}
+
+button {
+    background: linear-gradient(
+      90deg,
+      rgba(132, 53, 222, 1) 0%,
+      rgba(184, 84, 232, 1) 100%
+    );
+    border-radius: 3rem;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 1.2rem;
+    padding: 0.8rem 1.5rem;
+}
+
+button:hover {
+    background: linear-gradient(
+      90deg,
+      rgba(184, 84, 232, 1) 0%,
+      rgba(132, 53, 222, 1) 100%
+    );
+}
+
+.container{
+    background-color: #1c1c1c;
+    width: 90%;
+    max-width: 800px;
+    border: 2px solid #fff;
+    padding: 16px;
+    box-shadow: 0 0 2px 2px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.question-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+}
+.question{
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+}
+.answers-container{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+}
+.next-question{
+    margin-top: 32px;
+}
+
+.hide{
+    display: none;
+}
+button.correct{
+    background-color: #049b48 !important;;
+    color: white;
+}
+button.incorrect{
+    background-color: #a10101 !important;
+    color: white;
+}
+.answer:disabled{
+    cursor: not-allowed;
+}
+.final-message{
+    font-size: 20px;
+    text-align: center;
+}
+.final-message span{
+    display: block;
+    margin-top: 8px;
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz de Programação</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="App">
+        <h1>Quiz Interativo</h1>
+    <div id="welcome">
+        <h2 class="start-quiz" >Seja bem-vindo</h2>
+        <p class="start-quiz">Clique no botão abaixo para começar</p>
+        <button class="start-quiz button" id="startGame">Iniciar</button>
+            <img src='./quiz.svg' alt="foto do quiz" class="start-quiz" />
+        </div>
+
+        <div class="container hide">
+            <div class="questions-container hide">
+                <span class="question">
+                    Uma pergunta aqui
+                </span>
+                <div class="answers-container" >
+                    <button class="answer button">Resposta1</button>
+                    <button class="answer button">Reposta 2</button>
+                    <button class="answer button">Resposta 3</button>
+                    <button class="answer button">Resposta 4</button>
+                </div>
+            </div>
+            <div class="controls-container hide">
+                <button class="next-question button hide">Próxima Pergunta</button>
+            </div>
+        </div>
+
+
+      </div>
+<script src="script.js" async></script>
+</body>
+</html>
